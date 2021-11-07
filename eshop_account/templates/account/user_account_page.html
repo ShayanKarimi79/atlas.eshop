@@ -1,0 +1,16 @@
+{% extends "shared/_MainLayout.html" %}
+{% load render_partial %}
+
+
+
+{% block content %}
+     <div class="container">
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                {% render_partial 'eshop_account.views.profile_sidebar' %}
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
